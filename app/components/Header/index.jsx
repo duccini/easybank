@@ -3,10 +3,11 @@ import styles from "./styles.module.css";
 
 import logo from "@/public/logo.svg";
 import Link from "next/link";
+import Button from "../Button";
 
 export default function Header() {
   return (
-    <div className="container">
+    <div className={styles.menu_wrap}>
       <header className={styles.menu}>
         <Image src={logo} height={25} alt="Easybank" quality={100} />
         <div className={styles.navbar}>
@@ -29,7 +30,8 @@ export default function Header() {
             </Link>
           </nav>
         </div>
-        <button type="button">Request Invite</button>
+
+        <Button />
       </header>
     </div>
   );
