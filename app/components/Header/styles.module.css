@@ -1,56 +1,131 @@
-.menu_wrap {
-  max-width: 1440px;
-  margin: 0 auto;
-}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .menu_wrap {
+    max-width: 100%;
+    margin: 0 auto;
 
-.menu {
-  height: 60px;
+    position: relative;
+  }
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .menuMobile {
+    display: flex;
 
-.menu h2 {
-  color: red;
-}
+    margin: 0 0.5rem;
 
-.menu h2 {
-  font-weight: 300;
-}
+    height: 60px;
 
-.navbar a {
-  text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-  color: var(--gray500);
+  .navbarMobile {
+    position: absolute;
 
-  margin: 0 0.5rem;
+    top: 80px;
 
-  position: relative;
+    border-radius: 10px;
 
-  line-height: 60px;
+    background-color: var(--white);
 
-  transition: color 0.5s;
-}
+    padding: 1rem 0;
 
-.navbar a:hover {
-  color: var(--blue500);
+    z-index: 99999;
 
-  & .hover {
+    width: calc(100% - 4rem);
+    height: auto;
+    margin-left: 2rem;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbarMobile a {
+    text-decoration: none;
+
+    text-align: center;
+
+    line-height: 30px;
+
     display: block;
+    margin: 0 auto;
+
+    color: var(--blue500);
+  }
+
+  .menu {
+    display: none;
   }
 }
 
-.hover {
-  position: absolute;
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
 
-  left: 0;
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1440px) {
+  .menuMobile {
+    display: none;
+  }
 
-  display: none;
-  transition: 0.5s;
+  .menu_wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 
-  height: 4px;
-  width: 100%;
+  .menu {
+    height: 60px;
 
-  background-image: linear-gradient(to right, var(--green500), var(--cyan500));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu h2 {
+    color: red;
+  }
+
+  .menu h2 {
+    font-weight: 300;
+  }
+
+  .navbar a {
+    text-decoration: none;
+
+    color: var(--gray500);
+
+    margin: 0 0.5rem;
+
+    position: relative;
+
+    line-height: 60px;
+
+    transition: color 0.5s;
+  }
+
+  .navbar a:hover {
+    color: var(--blue500);
+
+    & .hover {
+      display: block;
+    }
+  }
+
+  .hover {
+    position: absolute;
+
+    left: 0;
+
+    display: none;
+    transition: 0.5s;
+
+    height: 4px;
+    width: 100%;
+
+    background-image: linear-gradient(
+      to right,
+      var(--green500),
+      var(--cyan500)
+    );
+  }
 }
