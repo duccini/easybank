@@ -59,6 +59,7 @@
   & p {
     color: var(--gray400);
     line-height: 1.5rem;
+    text-align: center;
   }
 }
 
@@ -111,6 +112,10 @@
     }
 
     & h3 {
+      text-align: left;
+    }
+
+    & p {
       text-align: left;
     }
   }

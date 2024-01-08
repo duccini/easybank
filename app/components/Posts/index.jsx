@@ -7,7 +7,7 @@ export default function Posts() {
   const posts = data.posts;
 
   const listArticles = posts.map((post) => {
-    console.log(`/@/${post.image}.jpg`);
+    // console.log(`/@/${post.image}.jpg`);
 
     return (
       <article key={post.id}>
