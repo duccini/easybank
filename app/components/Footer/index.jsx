@@ -13,7 +13,7 @@ export default function Footer() {
         <div className={styles.footer_content}>
           <div className={styles.footer_item}>
             <Image src={logo} height={25} alt="Easybank" />
-            <div className={styles.footer_icons}>
+            <div className={`${styles.footer_icons} ${styles.footer_item_top}`}>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                 <path
                   fill="#FFF"
@@ -79,7 +79,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className={styles.footer_item}>
+          <div className={`${styles.footer_item} ${styles.footer_item_bottom}`}>
             <div className={styles.footer_cta}>
               <Button />
               <p>&copy; All Rights Reserved</p>
