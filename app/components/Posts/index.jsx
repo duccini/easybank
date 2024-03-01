@@ -13,7 +13,7 @@ export default function Posts() {
       <article key={post.id}>
         <div className="image-wrap">
           <Image
-            alt={post.tile}
+            alt={post.title}
             width={339.1}
             height={250}
             src={`/${post.image}`}
